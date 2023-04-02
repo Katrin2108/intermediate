@@ -373,12 +373,12 @@ footer {
     .cards-section a:last-child{
         display: none;
       }
-    .section-container-left {
-        width: 88%;
+    .container-left {
+        width: 100%;
       }
-    .section-container-right {
-        width: 88%;
-        height: 435px;
+    .container-right {
+        width: 100%;
+        max-height: 435px;
         text-align: center;
         margin: auto;
     }

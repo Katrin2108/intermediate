@@ -345,5 +345,55 @@ span{
 footer {
     width: 100%;
 }
-
-
+.phone-bottom{
+    display: none;
+}
+@media(width<=1200px){
+    .search-loop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    header ul {
+        display: none;
+    }
+    .sell-something {
+        display: none;
+    }
+    .location-tittle {
+        display: grid;
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "banner" "location";
+     }
+    .container-right label {
+        display: none;
+    }
+    .cards-section a:last-child{
+        display: none;
+      }
+    .section-container-left {
+        width: 88%;
+      }
+    .section-container-right {
+        width: 88%;
+        height: 435px;
+        text-align: center;
+        margin: auto;
+    }
+    .footer-segment ul {
+        display: block;
+      }
+      .footer-segment p {
+        display: none;
+      }
+      .segment {
+        height: 326px;
+      }
+      .phone-bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+}

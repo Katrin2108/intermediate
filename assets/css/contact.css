@@ -64,7 +64,7 @@
 }
 .location-banner {
     display: grid;
-    width: 85.4%;
+    width: 84.4%;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     
@@ -72,6 +72,7 @@
   }
   .section-container-left {
     grid-area: banner;
+    min-height: 316px;
     padding: 35px 40px;
     background-image: url(../images/Rectangle\ 431.png);
     background-repeat: no-repeat;
@@ -468,4 +469,79 @@
     border-radius: 12px;
     margin-top: -28px;
   }
-  
+  .phone-bottom{display: none;}
+  .Group{display: none;}
+ 
+
+@media(width<=1200px){
+    header{
+        display: none;
+    } 
+    .location-banner {
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "details";
+    }
+    .full-details{
+        display: grid;
+        margin-top: 24px;
+        grid-template-columns: 1fr;
+        grid-column-gap: 132px;
+        grid-row-gap: 16px;
+        grid-template-areas: 
+        "property-address"
+        "condition"
+        "condition2"
+        "facilities"
+        "estate-name"
+        "furnishing"
+        "property-size";
+      }
+      .fac-info{
+        text-align: end;
+      }
+      .price-contact{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .article-contact{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+      }
+      .article-contact button{
+        width: 100%;
+      }
+      .full-details div{
+        display: flex;
+        justify-content: space-between;
+      }
+      .cards-section a:not(:first-child){
+        display: none;
+      }
+      .section-container-left {
+        margin: auto;
+        width: 88%;
+      }
+      .section-container-right {
+        width: 100%;
+      }
+      .footer-segment ul {
+        display: block;
+      }
+      .footer-segment p {
+        display: none;
+      }
+      .segment {
+        height: 326px;
+      }
+      .phone-bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+    }
+    

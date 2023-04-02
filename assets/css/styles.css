@@ -69,6 +69,9 @@
     background: #ffffff;
     color: #29b24e;
 }
+.search-loop{
+    display: none;
+}
 .location-tittle {
     display: grid;
     width: 84.4%;
@@ -169,7 +172,6 @@ span{
     top: 52px;
     right: 15px;
 }
-
 .cards-section {
     width: 84.4%;
     padding-top: 32px;
